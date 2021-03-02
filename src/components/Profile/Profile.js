@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import s from './Profile.module.css';
 
-// import { v4 as uuidv4 } from 'uuid';
-// const id = uuidv4();
-// console.log('id: ', id);
-
 const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
     <div className={s.profile}>

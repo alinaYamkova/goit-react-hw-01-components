@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
 
-function setColor() {
-  return `#${Math.random().toString(16).substr(-6)}`;
-}
-
 const Statistics = ({ title, stats }) => {
   // console.log(statistic);
   return (
@@ -17,7 +13,7 @@ const Statistics = ({ title, stats }) => {
           const { id, label, percentage } = el;
           return (
             <li className={s.item} key={id}>
-              <span className={s.label}>.{label}</span>
+              <span className={s.label}> {label}</span>
               <span className={s.percentage}>{percentage}%</span>
             </li>
           );

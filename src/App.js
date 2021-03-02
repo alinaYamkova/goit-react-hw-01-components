@@ -6,6 +6,8 @@ import TransactionHistory from './components/TransactionHistory/TransactionHisto
 
 import userData from './components/Profile/user.json';
 import statData from './components/Statistics/statistical-data.json';
+import friendsData from './components/FriendsList/friends.json';
+import transactions from './components/TransactionHistory/transactions.json';
 // console.log(userData);
 // console.log(statData);
 
@@ -19,9 +21,9 @@ function App() {
         avatar={userData.avatar}
         stats={userData.stats}
       />
-      <Statistics title="" stats={statData} />
-      <FriendsList />
-      <TransactionHistory />
+      <Statistics title="Upload stats" stats={statData} />
+      <FriendsList friends={friendsData} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
