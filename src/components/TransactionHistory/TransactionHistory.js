@@ -2,44 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import s from './TransactionHistory.module.css';
 
-const TransactionHistory = ({ id, type, amount, currency }) => {
+const TransactionHistory = ({ items }) => {
   return (
     <table className={s.transactionHistory}>
-      <thead>
-        <tr key={id}>
-          <th>{type}</th>
-          <th>{amount}</th>
-          <th>{currency}</th>
+      <thead className={s.head}>
+        <tr className={s.tr}>
+          <th className={s.th}>Type</th>
+          <th className={s.th}>Amount</th>
+          <th className={s.th}>Currency</th>
         </tr>
       </thead>
 
-      {/* <tbody>
-          <tr>
-            <td>Invoice</td>
-            <td>125</td>
-            <td>USD</td>
-          </tr>
-          <tr>
-            <td>Withdrawal</td>
-            <td>85</td>
-            <td>USD</td>
-          </tr>
-          <tr>
-            <td>Deposit</td>
-            <td>103.1</td>
-            <td>BWP</td>
-          </tr>
-          <tr>
-            <td>Payment</td>
-            <td>862.44</td>
-            <td>AUD</td>
-          </tr>
-          <tr>
-            <td>Withdrawal</td>
-            <td>371.43</td>
-            <td>MUR</td> */}
-      {/* </tr> */}
-      {/* </tbody> */}
+      <tbody className={s.tbody}>
+        {items.map(({ id, type, amount, currency }) => {
+          return (
+            <tr key={id}>
+              <td> {type}</td>
+              <td> {amount}</td>
+              <td> {currency}</td>
+            </tr>
+          );
+        })}
+      </tbody>
     </table>
   );
 };
