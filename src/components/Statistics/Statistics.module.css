@@ -1,0 +1,40 @@
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.statList {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(190, 215, 230);
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+  line-height: 1.3;
+  font-size: 16px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.item:nth-child(even) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.percentage {
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}

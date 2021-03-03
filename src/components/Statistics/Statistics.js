@@ -14,7 +14,7 @@ const Statistics = ({ title, stats }) => {
           return (
             <li className={s.item} key={id}>
               <span className={s.label}> {label}</span>
-              <span className={s.percentage}>{percentage}%</span>
+              <span className={s.percentage}> {percentage}%</span>
             </li>
           );
         })}
