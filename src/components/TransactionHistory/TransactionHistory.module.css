@@ -18,5 +18,9 @@
 }
 
 .th {
-  padding: 15px;
+  padding: 12px;
+}
+
+tr > .td1 {
+  text-transform: capitalize;
 }
