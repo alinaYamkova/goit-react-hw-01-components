@@ -1,8 +1,6 @@
 import React from 'react';
 import s from './FriendsList.module.css';
 import FriendsListItem from './FriendsListItem';
-import PropTypes from 'prop-types';
-import defaultImage from '../../assets/images/default_avatar.jpg';
 // import { v4 as uuidv4 } from 'uuid';
 // const id = uuidv4();
 // console.log('id: ', id);
