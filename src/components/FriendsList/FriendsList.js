@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './FriendsList.module.css';
-import FriendsListItem from './FriendsListItem';
+import FriendsListItem from '../FriendListItem/FriendsListItem';
 // import { v4 as uuidv4 } from 'uuid';
 // const id = uuidv4();
 // console.log('id: ', id);

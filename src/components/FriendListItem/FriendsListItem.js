@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './FriendsList.module.css';
+import s from '../FriendsList/FriendsList.module.css';
 import PropTypes from 'prop-types';
 import defaultImage from '../../assets/images/default_avatar.jpg';
 
